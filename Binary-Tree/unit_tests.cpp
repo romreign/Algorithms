@@ -1,8 +1,7 @@
 #define CATCH_CONFIG_MAIN
-#include "catch2/catch_test_macros.hpp"
+#include "catch2/catch_all.hpp"
 #include "BinaryTree.h"
-template<typename T>
-class BinaryTree;
+#include <iostream>
 
 TEST_CASE("FIND & GET POINTER")
 {
@@ -213,4 +212,7 @@ TEST_CASE("HEIGHT BINARY TREE")
     REQUIRE(root->height() == 4);
 }
 
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+}
 

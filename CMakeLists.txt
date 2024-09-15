@@ -14,4 +14,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 add_subdirectory(Binary-Tree)
 add_executable(Algorithms Binary-Tree/unit_tests.cpp)
-target_link_libraries(Algorithms bt Catch2::Catch2)
+target_include_directories(Algorithms PUBLIC Binary-Tree)
+target_link_libraries(Algorithms Binary-Tree Catch2::Catch2)
